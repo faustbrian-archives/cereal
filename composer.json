@@ -1,0 +1,64 @@
+{
+    "name": "kodekeep/cereal",
+    "description": "Serialisers/Deserialisers for various data formats.",
+    "keywords": [
+        "kodekeep",
+        "cereal"
+    ],
+    "homepage": "https://github.com/kodekeep/cereal",
+    "license": "MPL-2.0",
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "brian@kodekeep.com",
+            "homepage": "https://kodekeep.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "league/csv": "^9.5",
+        "netresearch/jsonmapper": "^1.6",
+        "symfony/property-access": "^5.0",
+        "symfony/serializer": "^5.0",
+        "symfony/yaml": "^5.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "phpunit/phpunit": "^8.3",
+        "symfony/var-dumper": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "KodeKeep\\Cereal\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KodeKeep\\Cereal\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test:coverage": "vendor/bin/phpunit --coverage-html=.coverage --coverage-clover=coverage.xml",
+        "format": "vendor/bin/php-cs-fixer fix ./"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KodeKeep\\Cereal\\CerealServiceProvider"
+            ],
+            "aliases": {
+                "Cereal": "KodeKeep\\Cereal\\CerealFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
