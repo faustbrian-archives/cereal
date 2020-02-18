@@ -1,13 +1,13 @@
 # Cereal
 
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/kodekeep/cereal/run-tests?label=tests)](https://github.com/kodekeep/cereal/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Code Coverage](https://badgen.now.sh/codecov/c/github/kodekeep/cereal)](https://codecov.io/gh/kodekeep/cereal)
-[![Minimum PHP Version](https://badgen.net/packagist/php/kodekeep/cereal)](https://packagist.org/packages/kodekeep/cereal)
 [![Latest Version](https://badgen.net/packagist/v/kodekeep/cereal)](https://packagist.org/packages/kodekeep/cereal)
+[![Software License](https://badgen.net/packagist/license/kodekeep/cereal)](https://packagist.org/packages/kodekeep/cereal)
+[![Build Status](https://img.shields.io/github/workflow/status/kodekeep/cereal/run-tests?label=tests)](https://github.com/kodekeep/cereal/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Coverage Status](https://badgen.net/codeclimate/coverage/kodekeep/cereal)](https://codeclimate.com/github/kodekeep/cereal)
+[![Quality Score](https://badgen.net/codeclimate/maintainability/kodekeep/cereal)](https://codeclimate.com/github/kodekeep/cereal)
 [![Total Downloads](https://badgen.net/packagist/dt/kodekeep/cereal)](https://packagist.org/packages/kodekeep/cereal)
-[![License](https://badgen.net/packagist/license/kodekeep/cereal)](https://packagist.org/packages/kodekeep/cereal)
 
-> Serialisers/Deserialisers for various data formats.
+This package was created by, and is maintained by [Brian Faust](https://github.com/faustbrian), and provides serialisers and deserialisers for various data formats.
 
 ## Installation
 
@@ -89,6 +89,10 @@ If you discover a security vulnerability within this package, please send an e-m
 
 This project exists thanks to all the people who [contribute](../../contributors).
 
+## Support Us
+
+We invest a lot of resources into creating and maintaining our packages. You can support us and the development through [GitHub Sponsors](https://github.com/sponsors/faustbrian).
+
 ## License
 
-Mozilla Public License Version 2.0 (MPL-2.0). Please see [License File](LICENSE.md) for more information.
+Cereal is an open-sourced software licensed under the [MPL-2.0](LICENSE.md).
